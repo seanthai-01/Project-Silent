@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jQuery.js"></script>
+    <title>Project Silent</title>
 </head>
 <body>
-    
+    <fieldset>
+        <legend align="center">
+            <h1>Register Employee</h1>
+        </legend>
+        <table align="center">
+            <tr>
+                <td>
+                    <label for="txtFirstname">Firstname</label>
+                </td>
+                <td>
+                    <input type="text" name="txtFirstname" id="txtFirstname" required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtSurname">Surname</label>
+                </td>
+                <td>
+                    <input type="text" name="txtSurname" id="txtSurname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtDate">Date of birth</label>
+                </td>
+                <td>
+                    <input type="date" name="txtDate" id="txtDate"required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtStartwork">Start Working</label>
+                </td>
+                <td>
+                    <input type="date" name="txtStartwork" id="txtStartwork" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtUsername">Username</label>
+                </td>
+                <td>
+                    <input type="text" name="txtUsername" id="txtUsername" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtPass">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="txtPass" id="txtPass" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="txtPassword">Confirm Password</label>
+                </td>
+                <td>
+                    <input type="password" name="txtPassword" id="txtPassword" required>
+                </td>
+                <td id="chkPassword"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="slDepartment">Department</label>
+                </td>
+                <td>
+                    <select name="slDepartment" id="slDepartment">
+                        <option value="">----Department----</option>
+                        <option value="1">Marketing</option>
+                        <option value="2">Information Technology Support</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="slPosition">Position</label>
+                </td>
+                <td>
+                    <select name="slPosition" id="slPosition" required>
+                        <option value="">----Position----</option>
+                        <option value="1">Programmer</option>
+                        <option value="2">Sale Marketing</option>
+                        <option value="3">Sale Area Maneger</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p align="center">
+                        <input type="button" value="Register" name="btnRegister" id="btnRegister">
+                        <a href="index.html">Login</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
 </body>
 </html>
+<script src="js/fun_register.js"></script>
